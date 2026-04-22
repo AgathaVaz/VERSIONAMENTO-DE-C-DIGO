@@ -1,0 +1,24 @@
+name: Fazendo comida
+
+on: Preparando:
+  push: Commit
+    branches: [ main ]
+
+jobs:
+  preparacao_culinaria:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 1. Separando
+      run: echo "Separando os Ingredientes."
+
+    - name: 2. Preparacao
+      run: echo "Ingredientes sendo lavados e cortados."
+    
+    - name: 3. Colocando
+      run: echo "Colocando ingredientes na panela."
+    
+    - name: 4. Pegar
+      run: echo " Pegando o Prato."
+
+    - name: 5. Finalizacao
+      run: echo "Colocar no Prato e Comer."
